@@ -7,3 +7,13 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  function sendForm() {
+    message = document.getElementById("Message").value;
+    email = document.getElementById("Email").value;
+    name = document.getElementById("Name").value;
+    console.log(message, email, name);
+    if (message && email && name) {
+      window.location = "NEI.html";
+    }
+  }
