@@ -33,34 +33,32 @@
           <!-- Use any element to open the sidenav -->
           <!-- <span onclick="openNav()">open</span> -->
     </body>
-
-
-
-    <form id="fcf-form-id" class="fcf-form-class" >
-        
-      <div class="fcf-form-group">
-          <label for="Name" class="fcf-label">Your name</label>
-          <div class="fcf-input-group">
-              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-          </div>
-      </div>
-
-      <div class="fcf-form-group">
-          <label for="Email" class="fcf-label">Your email address</label>
-          <div class="fcf-input-group">
-              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-          </div>
-      </div>
-
-      <div class="fcf-form-group">
-          <label for="Message" class="fcf-label">Your message</label>
-          <div class="fcf-input-group">
-              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-          </div>
-      </div>
-
-      <div class="fcf-form-group">
-          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Senden</button>
+    <form>
+      <br></br>
+      <a>Sie wollen in Kontakt mit uns Treten? Bitte Kontaktieren sie uns via unser Kontaktformular.</a>
+      <br></br>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Vorname</label>
+          <input type="text" id="fname" name="firstname" placeholder="Vorname">
+      
+          <label for="lname">Nachname</label>
+          <input type="text" id="lname" name="lastname" placeholder="Nachname">
+      
+          <label for="country">Land</label>
+          <select id="country" name="country">
+            <option value="Schweiz">Schweiz</option>
+            <option value="Deutschland">Deutschland</option>
+            <option value="Österreich">Österreich</option>
+          </select>
+      
+          <label for="subject">Betreff</label>
+          <textarea id="subject" name="subject" placeholder="Betreff" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
       </div>
     </form>
     <footer>
